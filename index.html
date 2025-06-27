@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Minesweeper Online - Play The Classic Game</title>
+    <meta name="description" content="Play the classic game of Minesweeper online for free. Test your logic and deduction skills with our simple, clean, and fast-loading version of this timeless puzzle game. No downloads or registration required.">
+    <meta name="keywords" content="minesweeper, free minesweeper, minesweeper online, classic minesweeper, play minesweeper">
+    <meta name="author" content="freeminesweeper.online">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://freeminesweeper.online/">
+    
+    <!-- Bing Site Verification -->
+    <meta name="msvalidate.01" content="E1AFC1A9F5D0A95762C2EE9693A0F848" />
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3144414912904958"
+     crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GDPYCXH7ZL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GDPYCXH7ZL');
+    </script>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://freeminesweeper.online/">
+    <meta property="og:title" content="Free Minesweeper Online - Play The Classic Game">
+    <meta property="og:description" content="Play the classic game of Minesweeper online for free. Test your logic and deduction skills with our simple, clean, and fast-loading version of this timeless puzzle game.">
+    <meta property="og:image" content="https://freeminesweeper.online/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://freeminesweeper.online/">
+    <meta property="twitter:title" content="Free Minesweeper Online - Play The Classic Game">
+    <meta property="twitter:description" content="Play the classic game of Minesweeper online for free. Test your logic and deduction skills with our simple, clean, and fast-loading version of this timeless puzzle game.">
+    <meta property="twitter:image" content="https://freeminesweeper.online/og-image.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .game-container {
+            /* aspect ratio to prevent layout shift and size the game correctly */
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%; /* 4:3 Aspect Ratio */
+        }
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        /* Using @apply to keep Tailwind consistency for prose styles */
+        .prose h2 { @apply text-2xl font-bold mb-4 mt-8; }
+        .prose h3 { @apply text-xl font-bold mb-3 mt-6; }
+        .prose p { @apply mb-4; }
+        .prose ul, .prose ol { @apply list-inside mb-4; }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Free Minesweeper Online - Play The Classic Game",
+      "description": "Play the classic game of Minesweeper online for free. Test your logic and deduction skills with our simple, clean, and fast-loading version of this timeless puzzle game.",
+      "url": "https://freeminesweeper.online/",
+      "mainEntity": {
+        "@type": "Game",
+        "name": "Minesweeper",
+        "gamePlatform": "Web-based",
+        "playMode": "singlePlayer"
+      }
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="lg:flex lg:space-x-8">
+
+            <!-- Left Sidebar -->
+            <aside class="lg:w-1/5 hidden lg:block">
+                <div class="p-4 rounded sticky top-8">
+                    <h2 class="text-xl font-bold mb-4">Game Info</h2>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/how-to-play.html" class="hover:underline">How to Play</a></li>
+                        <li><a href="/game-rules.html" class="hover:underline">Game Rules</a></li>
+                        <li><a href="/about.html" class="hover:underline">About this Site</a></li>
+                    </ul>
+                    <hr class="my-6">
+                    <h3 class="font-bold mb-2">Controls</h3>
+                    <ul class="space-y-1 text-sm">
+                        <li><strong>Click:</strong> Reveal a square</li>
+                        <li><strong>Right-click:</strong> Flag a square</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="lg:w-3/5">
+                <header class="text-center mb-4">
+                    <h1 class="text-4xl font-bold">Free Minesweeper Online</h1>
+                    <p class="text-md text-gray-600 mt-2">The classic puzzle game, right in your browser. No downloads, no distractions.</p>
+                </header>
+
+                <section class="flex justify-center mb-8">
+                    <div class="w-full max-w-2xl">
+                        <div class="game-container">
+                            <iframe src="https://freeminesweeperonline.vercel.app/" title="Free Minesweeper Game" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <article class="prose max-w-none">
+                    <p class="text-center">Welcome to the classic game of Minesweeper. Use the links on the left to learn how to play, or dive right in and try to clear the board without hitting a mine. Good luck!</p>
+                </article>
+            </main>
+
+            <!-- Right Sidebar (Blank) -->
+            <aside class="lg:w-1/5 hidden lg:block">
+                <!-- This sidebar is intentionally left blank -->
+            </aside>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 mt-8 border-t">
+        <p class="text-sm text-gray-600">&copy; 2024 freeminesweeper.online. All Rights Reserved.</p>
+        <p class="text-xs text-gray-500 mt-1">
+            <a href="#" class="hover:underline">About</a> | <a href="#" class="hover:underline">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <!-- Performance Monitoring -->
+    <script>
+        try {
+            new PerformanceObserver((entryList) => {
+              for (const entry of entryList.getEntries()) {
+                console.log('LCP:', entry.startTime);
+              }
+            }).observe({type: 'largest-contentful-paint', buffered: true});
+        } catch (e) {
+            // Do nothing if the browser doesn't support this API.
+        }
+    </script>
+</body>
+</html> 
